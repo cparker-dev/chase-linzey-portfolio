@@ -120,7 +120,7 @@ function About(){return(
   <Reveal id="about" style={{padding:"120px 32px",maxWidth:900,margin:"0 auto"}}>
     <Label text="About"/><STitle>A bit about me</STitle>
     <div style={{display:"flex",justifyContent:"center",marginTop:36,marginBottom:40}}>
-      <div style={{width:220,height:220,borderRadius:"50%",overflow:"hidden",border:`3px solid ${C.accent}40`,boxShadow:`0 0 60px ${C.accent}10`}}>
+      <div style={{width:330,height:330,borderRadius:"50%",overflow:"hidden",border:`3px solid ${C.accent}40`,boxShadow:`0 0 60px ${C.accent}10`}}>
         <img src={SITE.headshot} alt="Chase Linzey" style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.parentElement.style.display="none";}}/>
       </div>
     </div>
@@ -180,8 +180,8 @@ function Projects(){
         {SITE.projects.map((p,i)=>{const isOpen=expanded===i;return(
           <div key={p.id} onClick={()=>setExpanded(isOpen?null:i)} className="project-card" style={{background:isOpen?C.surfaceHover:C.surface,border:`1px solid ${isOpen?C.borderHover:C.border}`,cursor:"pointer",transition:"all 0.4s cubic-bezier(0.16,1,0.3,1)",position:"relative",overflow:"hidden"}}>
             <div style={{position:"absolute",top:0,left:0,width:isOpen?"100%":"3px",height:isOpen?2:"100%",background:p.color,transition:"all 0.5s cubic-bezier(0.16,1,0.3,1)"}}/>
-            {p.highlight&&<div style={{position:"absolute",top:16,right:20,fontFamily:"'Jost',sans-serif",fontSize:9,fontWeight:700,letterSpacing:"0.2em",textTransform:"uppercase",color:C.bg,background:p.color,padding:"4px 12px"}}>★ CAPSTONE</div>}
             <div style={{padding:"28px 32px",paddingBottom:isOpen?0:28}}>
+              {p.highlight&&<div style={{display:"flex",justifyContent:"flex-end",marginBottom:10}}><span style={{fontFamily:"'Jost',sans-serif",fontSize:9,fontWeight:700,letterSpacing:"0.2em",textTransform:"uppercase",color:C.bg,background:p.color,padding:"4px 12px"}}>★ CAPSTONE</span></div>}
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",flexWrap:"wrap",gap:12}}>
                 <div>
                   <div style={{fontFamily:"'Jost',sans-serif",fontSize:10,fontWeight:600,letterSpacing:"0.18em",textTransform:"uppercase",color:p.color,marginBottom:6}}>{p.type}</div>
