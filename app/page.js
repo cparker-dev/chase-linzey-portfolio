@@ -24,16 +24,17 @@ const SITE = {
   },
   projects: [
     {
-      id: "capstone", title: "Convivial Landscapes — Capstone", type: "CAPSTONE · LAR498 STUDIO", date: "Spring 2026", location: "Tucson, AZ", size: "6 Acres", color: "#6B8F5E", highlight: true,
+      id: "capstone", title: "Convivial Landscapes — Capstone", type: "CAPSTONE · LAR498 STUDIO", date: "Spring 2026", location: "Tucson, AZ", size: "6 Acres", color: "#6B8F5E", highlight: true, tags: ["solo","urban"],
       images: Array.from({length:16},(_,i)=>`/images/capstone-${i+1}.jpg`),
       description: "Empty, unused lots can be transformed into something meaningful for both people and the environment. The main idea behind this project is conviviality — creating a space where people, plants, and animals can all exist together in a way that feels natural and balanced. Instead of designing only for people or only for nature, the project creates zones across the site that shift in how they are used. Some areas are more human-focused — plazas, playgrounds, and spaces for food trucks or local vendors. Other areas prioritize habitat with limited human interaction. Transition zones allow both systems to overlap, creating a spectrum of experiences throughout the site. The project includes multiple plazas, walking paths, garden spaces, and protected habitat areas. Water harvesting systems such as basins and swales capture and reuse water in the Sonoran Desert. Native plants like mesquite, acacia, creosote, and saguaro were chosen for climate adaptation and ecosystem support. Layered vegetation supports different species — insects and ground species in low-disturbance zones, birds through open sightlines. This project hopes to create a framework for similar projects throughout the American Southwest, turning leftover land into communal nodes that bring life back into the city.",
     },
-    { id: "rio-rico", title: "Rio Rico Frontage Road Revitalization", type: "URBAN · GROUP PROJECT (TEAM LEAD)", date: "Fall 2025 — Spring 2026", location: "Rio Rico, AZ", size: "3.8 Miles", color: "#D4A574", highlight: false, images: ["/images/rio-rico-1.jpg","/images/rio-rico-2.jpg"], description: "A 3.8-mile frontage road revitalization addressing intense reflective heat, lack of shade, no pedestrian-road buffer, and flooding/erosion. The design introduces 112 native trees (Desert Willow, Ironwood, Sweet Acacia, Honey Mesquite), water-harvesting basins, and buffered pedestrian pathways. Expected ribbon cutting Spring 2026. Submitted to ASLA National Awards." },
-    { id: "infinity-garden", title: "Infinity Garden @ Watermark Retirement", type: "GARDEN · GROUP PROJECT", date: "Fall 2025", location: "Tucson, AZ", size: "6,400 sqft", color: "#8DAA6F", highlight: false, images: ["/images/infinity-garden-1.jpg","/images/infinity-garden-2.jpg"], description: "A multi-zone courtyard garden for a retirement community featuring Garden, Recreation, Mystery, and Sensory zones. Designed an infinity path connecting community gardens, aroma gardens, and recreation spaces. Presented to Watermark Retirement's local board in December 2025." },
-    { id: "sensory-garden", title: "Mediterranean Sunken Sensory Garden", type: "GARDEN · SOLO", date: "Fall 2025", location: "Tucson, AZ", size: "0.4 Acres", color: "#B8860B", highlight: false, images: ["/images/sensory-garden-1.jpg","/images/sensory-garden-2.jpg"], description: "A Mediterranean-style garden exploring how abstract geometric art shapes outdoor space. Influenced by Theorem of Forms and Mikyoung Kim's design principles. Features a lowered shade plaza surrounded by Cleveland sage and pomegranate trees, with elevated planters of textured plant layers creating enclosure and depth." },
-    { id: "arid-garden", title: "Arid Sonoran Garden", type: "GARDEN · SOLO", date: "Fall 2025", location: "Tucson, AZ", size: "600 sqft", color: "#CC8844", highlight: false, images: ["/images/arid-garden-1.jpg"], description: "A drought-resistant desert garden using Desert Willow, Honey Mesquite, Texas Sage, Ocotillo, Joshua Tree, Red Yucca, and Agave. All plants need under 10 inches of rainfall annually. Medium canopies kept under 20×20 feet to create intimate focal points rather than imposing spaces." },
-    { id: "rivera", title: "Dinural Outdoor Design @ Rivera Elementary", type: "URBAN · SOLO", date: "Fall 2024", location: "Tucson, AZ", size: "2.3 Acres", color: "#7A9BAE", highlight: false, images: ["/images/rivera-1.jpg","/images/rivera-2.jpg"], description: "A campus revitalization for Rivera Elementary School addressing disjointed lawn space and lack of nature connection. Created points of arrival with swings, four-square courts, shade structures, solar canopies, and a wooden arcade. Natural playground and garden spaces serve as outdoor classrooms throughout the day." },
-    { id: "coatimundi", title: "Coatimundi Habitat Suitability Analysis", type: "GIS · SOLO", date: "2025", location: "Pima County, AZ", size: "County-wide", color: "#C4956A", highlight: false, images: ["/images/coatimundi-1.jpg"], description: "A GIS suitability map using ArcGIS to determine optimal Coatimundi habitat zones in Southern Arizona. Weighted 95% on vegetation type and 5% on road distance. Identified key habitat in the O'odham Reservation, Coronado National Forest, and Rincon Mountain District." },
+    { id: "rio-rico-asla", title: "Rio Rico Frontage Road — ASLA Submission", type: "URBAN · GROUP PROJECT (TEAM LEAD)", date: "Spring 2026", location: "Rio Rico, AZ", size: "3.8 Miles", color: "#D4A574", highlight: false, tags: ["group","urban"], images: Array.from({length:12},(_,i)=>`/images/rio-rico-asla-${i+1}.jpg`), description: "The ASLA National Awards submission for the Rio Rico Frontage Road revitalization. This package presents the full scope of the 3.8-mile corridor redesign — from site analysis and concept development through final construction documentation. The submission highlights the project's approach to heat mitigation, native planting strategy with 112 trees, water-harvesting infrastructure, and buffered pedestrian pathways designed for a Sonoran Desert context." },
+    { id: "rio-rico-studio", title: "Rio Rico Frontage Road — Studio Project", type: "URBAN · GROUP PROJECT (TEAM LEAD)", date: "Fall 2025 — Spring 2026", location: "Rio Rico, AZ", size: "3.8 Miles", color: "#C49264", highlight: false, tags: ["group","urban"], images: ["/images/rio-rico-1.jpg","/images/rio-rico-2.jpg"], description: "The original studio project addressing intense reflective heat, lack of shade, no pedestrian-road buffer, and flooding/erosion along 3.8 miles of frontage road. The design introduces 112 native trees (Desert Willow, Ironwood, Sweet Acacia, Honey Mesquite), water-harvesting basins, and buffered pedestrian pathways. This work formed the foundation for the ASLA National Awards submission." },
+    { id: "infinity-garden", title: "Infinity Garden @ Watermark Retirement", type: "GARDEN · GROUP PROJECT", date: "Fall 2025", location: "Tucson, AZ", size: "6,400 sqft", color: "#8DAA6F", highlight: false, tags: ["group","garden"], images: ["/images/infinity-garden-1.jpg","/images/infinity-garden-2.jpg"], description: "A multi-zone courtyard garden for a retirement community featuring Garden, Recreation, Mystery, and Sensory zones. Designed an infinity path connecting community gardens, aroma gardens, and recreation spaces. Presented to Watermark Retirement's local board in December 2025." },
+    { id: "sensory-garden", title: "Mediterranean Sunken Sensory Garden", type: "GARDEN · SOLO", date: "Fall 2025", location: "Tucson, AZ", size: "0.4 Acres", color: "#B8860B", highlight: false, tags: ["solo","garden"], images: ["/images/sensory-garden-1.jpg","/images/sensory-garden-2.jpg"], description: "A Mediterranean-style garden exploring how abstract geometric art shapes outdoor space. Influenced by Theorem of Forms and Mikyoung Kim's design principles. Features a lowered shade plaza surrounded by Cleveland sage and pomegranate trees, with elevated planters of textured plant layers creating enclosure and depth." },
+    { id: "arid-garden", title: "Arid Sonoran Garden", type: "GARDEN · SOLO", date: "Fall 2025", location: "Tucson, AZ", size: "600 sqft", color: "#CC8844", highlight: false, tags: ["solo","garden"], images: ["/images/arid-garden-1.jpg"], description: "A drought-resistant desert garden using Desert Willow, Honey Mesquite, Texas Sage, Ocotillo, Joshua Tree, Red Yucca, and Agave. All plants need under 10 inches of rainfall annually. Medium canopies kept under 20×20 feet to create intimate focal points rather than imposing spaces." },
+    { id: "rivera", title: "Dinural Outdoor Design @ Rivera Elementary", type: "URBAN · SOLO", date: "Fall 2024", location: "Tucson, AZ", size: "2.3 Acres", color: "#7A9BAE", highlight: false, tags: ["solo","urban"], images: ["/images/rivera-1.jpg","/images/rivera-2.jpg"], description: "A campus revitalization for Rivera Elementary School addressing disjointed lawn space and lack of nature connection. Created points of arrival with swings, four-square courts, shade structures, solar canopies, and a wooden arcade. Natural playground and garden spaces serve as outdoor classrooms throughout the day." },
+    { id: "coatimundi", title: "Coatimundi Habitat Suitability Analysis", type: "GIS · SOLO", date: "2025", location: "Pima County, AZ", size: "County-wide", color: "#C4956A", highlight: false, tags: ["solo","gis"], images: ["/images/coatimundi-1.jpg"], description: "A GIS suitability map using ArcGIS to determine optimal Coatimundi habitat zones in Southern Arizona. Weighted 95% on vegetation type and 5% on road distance. Identified key habitat in the O'odham Reservation, Coronado National Forest, and Rincon Mountain District." },
   ],
   processPhotos: Array.from({length:8},(_,i)=>`/images/process-${i+1}.jpg`),
 };
@@ -163,7 +164,7 @@ function ImageCarousel({images,title,color}){
         <img src={images[idx]} alt={`${title} ${idx+1}`} onClick={e=>{e.stopPropagation();setLb(idx);}} style={{width:"100%",height:"100%",objectFit:"contain",cursor:"zoom-in",background:C.bg}} onError={e=>{e.target.style.display="none";}}/>
         {t>1&&<><button onClick={e=>{e.stopPropagation();setIdx((idx-1+t)%t);}} style={{position:"absolute",left:12,top:"50%",transform:"translateY(-50%)",width:36,height:36,borderRadius:"50%",background:"rgba(0,0,0,0.55)",border:"none",color:"#fff",fontSize:18,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center"}}>‹</button>
         <button onClick={e=>{e.stopPropagation();setIdx((idx+1)%t);}} style={{position:"absolute",right:12,top:"50%",transform:"translateY(-50%)",width:36,height:36,borderRadius:"50%",background:"rgba(0,0,0,0.55)",border:"none",color:"#fff",fontSize:18,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center"}}>›</button></>}
-        {t>1&&<div style={{position:"absolute",bottom:12,left:"50%",transform:"translateX(-50%)",display:"flex",gap:6}}>{images.map((_,j)=><button key={j} onClick={e=>{e.stopPropagation();setIdx(j);}} style={{width:idx===j?18:6,height:6,borderRadius:3,background:idx===j?color:"rgba(255,255,255,0.4)",border:"none",cursor:"pointer",padding:0,transition:"all 0.3s"}}/>)}</div>}
+        {t>1&&t<=8&&<div style={{position:"absolute",bottom:12,left:"50%",transform:"translateX(-50%)",display:"flex",gap:6}}>{images.map((_,j)=><button key={j} onClick={e=>{e.stopPropagation();setIdx(j);}} style={{width:idx===j?18:6,height:6,borderRadius:3,background:idx===j?color:"rgba(255,255,255,0.4)",border:"none",cursor:"pointer",padding:0,transition:"all 0.3s"}}/>)}</div>}
         <div style={{position:"absolute",top:12,right:12,fontFamily:"'Jost',sans-serif",fontSize:11,fontWeight:500,color:"rgba(255,255,255,0.7)",background:"rgba(0,0,0,0.5)",padding:"4px 10px",letterSpacing:"0.05em"}}>{idx+1} / {t}</div>
       </div>
     </div>
@@ -171,13 +172,42 @@ function ImageCarousel({images,title,color}){
 }
 
 // ── PROJECTS ────────────────────────────────────────────────────
+const FILTERS = [
+  { label: "All", value: "all" },
+  { label: "Solo", value: "solo" },
+  { label: "Group", value: "group" },
+  { label: "Garden", value: "garden" },
+  { label: "Urban", value: "urban" },
+  { label: "GIS", value: "gis" },
+];
+
 function Projects(){
   const[expanded,setExpanded]=useState(null);
+  const[filter,setFilter]=useState("all");
+
+  const filtered = filter === "all" ? SITE.projects : SITE.projects.filter(p => p.tags?.includes(filter));
+
   return(
     <Reveal id="projects" style={{padding:"120px 32px",maxWidth:1100,margin:"0 auto"}}>
       <Label text="Projects"/><STitle>Selected Design Work</STitle>
-      <div style={{display:"flex",flexDirection:"column",gap:20,marginTop:48}}>
-        {SITE.projects.map((p,i)=>{const isOpen=expanded===i;return(
+
+      {/* Filter bubbles */}
+      <div style={{display:"flex",flexWrap:"wrap",gap:10,marginTop:24,marginBottom:40}}>
+        {FILTERS.map(f=>(
+          <button key={f.value} onClick={()=>{setFilter(f.value);setExpanded(null);}} className="filter-chip" style={{
+            fontFamily:"'Jost',sans-serif",fontSize:12,fontWeight:filter===f.value?600:400,
+            letterSpacing:"0.08em",textTransform:"uppercase",
+            color:filter===f.value?C.bg:C.textMuted,
+            background:filter===f.value?C.accent:"transparent",
+            border:`1px solid ${filter===f.value?C.accent:C.border}`,
+            padding:"8px 20px",borderRadius:24,cursor:"pointer",
+            transition:"all 0.3s cubic-bezier(0.16,1,0.3,1)",
+          }}>{f.label}</button>
+        ))}
+      </div>
+
+      <div style={{display:"flex",flexDirection:"column",gap:20}}>
+        {filtered.map((p,i)=>{const isOpen=expanded===i;return(
           <div key={p.id} onClick={()=>setExpanded(isOpen?null:i)} className="project-card" style={{background:isOpen?C.surfaceHover:C.surface,border:`1px solid ${isOpen?C.borderHover:C.border}`,cursor:"pointer",transition:"all 0.4s cubic-bezier(0.16,1,0.3,1)",position:"relative",overflow:"hidden"}}>
             <div style={{position:"absolute",top:0,left:0,width:isOpen?"100%":"3px",height:isOpen?2:"100%",background:p.color,transition:"all 0.5s cubic-bezier(0.16,1,0.3,1)"}}/>
             <div style={{padding:"28px 32px",paddingBottom:isOpen?0:28}}>
@@ -281,6 +311,7 @@ export default function App(){
       .project-card:hover{border-color:${C.borderHover} !important}
       .process-img:hover{border-color:${C.accent}40 !important}
       .process-img:hover img{transform:scale(1.05)}
+      .filter-chip:hover{border-color:${C.accent} !important;color:${C.accent} !important}
       .inp:focus{border-color:${C.accent}70 !important}
       .scroll-pip{animation:scrollAnim 2.2s ease-in-out infinite}
       @keyframes scrollAnim{0%{top:0;opacity:0}20%{opacity:1}80%{opacity:1}100%{top:34px;opacity:0}}
